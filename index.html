@@ -9,16 +9,31 @@
     <link rel="stylesheet" href="lib/css/toaster.css">
     <script src="lib/js/angular.js"></script>
 </head>
+
 <body>
     <div class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
                 <a href="index.html" class="navbar-brand">GatherUp</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-            <div >
+            <div class="collapse navbar-collapse" id="collapse-nav">
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="https://github.com/Saaka/gatherup">GitHub page</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href=""><strong>Sign up</strong></a>
+                    </li>
+                    <li>
+                        <a href="">Sign in</a>
                     </li>
                 </ul>
             </div>
@@ -27,7 +42,7 @@
     <main class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 id="myh1">GatherUp <i class="fa fa-users"></i></h1>
+                <h1>GatherUp <i class="fa fa-users"></i></h1>
             </div>
         </div>
     </main>
@@ -41,5 +56,7 @@
     <script src="lib/js/toaster.js"></script>
     <script src="lib/js/jquery.js"></script>
     <script src="lib/js/bootstrap.js"></script>
+    <script src="lib/js/collapse.js"></script>
 </body>
+
 </html>

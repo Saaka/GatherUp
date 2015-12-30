@@ -18,7 +18,8 @@ gulp.task('move-js', function() {
 						'bower_components/angular-animate/angular-animate.js',
 						'bower_components/AngularJS-Toaster/toaster.js',
 						'bower_components/jquery/dist/jquery.js',
-						'bower_components/bootstrap/dist/js/bootstrap.js'])
+						'bower_components/bootstrap/dist/js/bootstrap.js',
+						'bower_components/bootstrap/js/collapse.js'])
 		.pipe(gulp.dest('lib/js'));
 });
 
