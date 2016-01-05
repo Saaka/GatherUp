@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" ng-app="gatherup">
 
 <head>
     <title>GatherUp - Create events or meetings for friend or any public audience.</title>
@@ -11,45 +11,47 @@
 </head>
 
 <body>
-    <div class="navbar navbar-default navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
-                <a href="index.html" class="navbar-brand">GatherUp</a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-nav" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="collapse-nav">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="https://github.com/Saaka/gatherup">GitHub page</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href=""><strong>Sign up</strong></a>
-                    </li>
-                    <li>
-                        <a href="">Sign in</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <main class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>GatherUp <i class="fa fa-users"></i></h1>
+    <div ng-controller="MainCtrl" ng-Cloak>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand">{{title}}</a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="collapse-nav">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="https://github.com/Saaka/gatherup">GitHub page</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href=""><strong>Sign up</strong></a>
+                        </li>
+                        <li>
+                            <a href="">Sign in</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </main>
-    <div class="footer">
-        <div class="container">
-            <hr />
-            <p>&copy; 2015 - Michał Sakwa</p>
+        <main class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>GatherUp <i class="fa fa-users"></i></h1>
+                </div>
+            </div>
+        </main>
+        <div class="footer">
+            <div class="container">
+                <hr />
+                <p>&copy; 2015 - Michał Sakwa</p>
+            </div>
         </div>
     </div>
     <script src="lib/js/angular-animate.js"></script>
@@ -57,6 +59,7 @@
     <script src="lib/js/jquery.js"></script>
     <script src="lib/js/bootstrap.js"></script>
     <script src="lib/js/collapse.js"></script>
+    <script src="app/scripts/gatherup.js"></script>
 </body>
 
 </html>

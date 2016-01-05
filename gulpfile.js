@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var webserver = require('gulp-webserver');
 var gp_concat = require('gulp-concat');
 var gp_rename = require('gulp-rename');
 var gp_uglify = require('gulp-uglify');
@@ -36,3 +37,12 @@ gulp.task('move-fonts', function() {
 });
 
 gulp.task('default', ['move-js', 'move-css', 'move-fonts',], function() {});
+
+gulp.task('serve', function() {
+   gulp.src('')
+    .pipe(webserver({
+       livereload: true,
+       fallback: 'index.html',
+       open: true
+   }));
+});
