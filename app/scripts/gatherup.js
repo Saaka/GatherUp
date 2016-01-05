@@ -1,6 +1,3 @@
-var app = angular.module('gatherup', ['ngAnimate', 'toaster']);
+'use strict';
 
-app.controller('MainCtrl', ['$scope', '$http', 'toaster', function($scope, $http, toaster) {
-    $scope.title = 'GatherUp';
-    
-}]);
+var app = angular.module('gatherup', ['ngAnimate', 'toaster', 'ui.router']);
