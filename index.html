@@ -11,39 +11,13 @@
 </head>
 
 <body>
-    <div ng-controller="MainCtrl" ng-Cloak>
-        <div class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <a href="/" class="navbar-brand">{{title}}</a>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-nav" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="collapse-nav">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="https://github.com/Saaka/gatherup">GitHub page</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#/register"><strong>Register</strong></a>
-                        </li>
-                        <li>
-                            <a href="#/login">Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <div ng-Cloak>
+        <!--Head navi-->
+        <div ng-include="'app/views/header.html'"></div>
         <main class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>GatherUp <i class="fa fa-users"></i></h1>
+                    <div ui-view></div>
                 </div>
             </div>
         </main>
