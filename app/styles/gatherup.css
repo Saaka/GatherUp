@@ -2,6 +2,10 @@
     font-size: 120%;
 }
 
+.center-text {
+    text-align: center;
+}
+
 .form-signin {
     max-width: 280px;
     padding: 15px;
