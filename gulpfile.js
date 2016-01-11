@@ -27,7 +27,8 @@ gulp.task('move-js', function() {
 
 gulp.task('move-css', function() {
 	return gulp.src(['bower_components/font-awesome/css/font-awesome.css',
-						'bower_components/AngularJS-Toaster/toaster.css'])
+						'bower_components/AngularJS-Toaster/toaster.css',
+                        'bower_components/animate.css/animate.min.css'])
 		.pipe(gulp.dest('lib/css'));
 });
 

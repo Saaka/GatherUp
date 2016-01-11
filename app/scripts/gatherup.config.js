@@ -1,7 +1,7 @@
-app.config(function ($urlRouterProvider,$stateProvider) {
+app.config(function ($urlRouterProvider, $stateProvider) {
 
     $urlRouterProvider.otherwise('/');
-    
+
     $stateProvider
         .state('main', {
             url: '/',
@@ -9,7 +9,8 @@ app.config(function ($urlRouterProvider,$stateProvider) {
         })
         .state('register', {
             url: '/register',
-            templateUrl: 'app/views/register.html'
+            templateUrl: 'app/views/register.html',
+            controller: 'RegisterCtrl'
         })
         .state('login', {
             url: '/login',
