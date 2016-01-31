@@ -4,8 +4,12 @@ app.controller('RegisterCtrl', ['$scope', '$http', 'registerService', 'toaster',
     $scope.user = {};
 
     $scope.submit = function () {
-        toaster.pop('info', 'User registered!', 'Check your email ' + $scope.user.email + ' for further instructions.', 8000);
-        //alert('success', 'User registered!', 'Check your email ' + $scope.user.email + ' for further instructions', 4000);
-        //registerService.registerUser($scope.user);
+//        registerService.registerUser($scope.user)
+//            .then(function (res) {
+//                toaster.pop('info', 'User registered!', 'Check your email ' + res.user.email + ' for further instructions.', 8000);
+//            })
+//            .catch(function (err) {
+//                toaster.pop('error', 'Registration failed', 'Registration failed for email ' + $scope.user.email, 8000);
+//            });
     };
 }]);

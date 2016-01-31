@@ -1,4 +1,4 @@
-<div class="navbar navbar-default navbar-static-top">
+<div ng-controller="HeaderCtrl" class="navbar navbar-default navbar-static-top">
     <div class="container">
         <div class="navbar-header">
             <a ui-sref="main" class="navbar-brand"><span class="bigger-nav-font">G</span>ATHER<span class="bigger-nav-font">U</span>P</a>
@@ -16,7 +16,7 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li ui-sref-active="active">
+                <li ng-if="!authToken.isAuth" ui-sref-active="active">
                     <a ui-sref="register"><strong><span class="bigger-nav-font">R</span>EGISTER</strong></a>
                 </li>
                 <li ui-sref-active="active">
